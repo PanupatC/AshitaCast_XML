@@ -1,0 +1,36 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>false</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statusupdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+    <sets>
+
+		<set name="idle">
+			<main>Spatha</main>
+			<sub>Shell Shield</sub>
+			<ammo>Little Worm</ammo>
+			<body>Doublet</body>
+			<hands>Gloves</hands>
+			<legs>Slacks</legs>
+			<feet>Tarutaru Clomps</feet>
+			<neck>Justice Badge</neck>
+			<ring1>Windurstian Ring</ring1>
+			<ring2>Empress Band</ring2>
+			<back>Cape</back>
+		</set>
+    </sets>
+
+
+    <idlegear>
+		<if p_joblevel="<5"> <setvar name="lvl" value="1" /> </if>
+		<else>               <setvar name="lvl" value="" />  </else>
+		
+        <if p_status="idle">
+            <equip set="idle" />
+        </if>
+    </idlegear>
+
+
+</ashitacast>

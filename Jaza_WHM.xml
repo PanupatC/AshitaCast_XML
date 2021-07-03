@@ -1,0 +1,66 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>false</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statusupdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+    <sets>
+		<set name="idle">
+			<main>Willow Wand</main>
+			<sub>Lauan Shield</sub>
+			<range>Willow Fish. Rod</range>
+			<ammo>Little Worm</ammo>
+			<body>Doublet</body>
+			<hands>Gloves</hands>
+			<legs>Slacks</legs>
+			<feet>Tarutaru Clomps</feet>
+			<neck>Justice Badge</neck>
+			<ring1>Windurstian Ring</ring1>
+			<back>Cape</back>
+		</set>
+    </sets>
+
+	<variables>
+		<var name="lvl"></var>
+	</variables>
+    <!--equip set="Idle" /-->
+    <inputcommands>
+    </inputcommands>
+
+	<idlegear>
+		<if p_joblevel"<5" >
+			<setvar name="lvl" value="1"></setvar>
+		</if>
+		
+        <if p_status="idle">
+            <equip set="Idle%lvl" />
+        </if>
+    </idlegear>
+
+	<preranged>
+	</preranged>
+		
+	<midranged>
+	</midranged>
+
+	<premagic>
+	</premagic>
+		
+	<midmagic>
+	</midmagic>
+
+	<jobability>
+	</jobability>
+
+	<weaponskill>
+	</weaponskill>
+	
+	<petskill>
+	</petskill>
+	
+	<petspell>
+	</petsspell>
+    
+
+</ashitacast>
