@@ -1,0 +1,85 @@
+##########################################################################
+#
+# Ashita Default Script
+#
+# Comments start with '#'.
+# All commands start with '/'
+#
+##########################################################################
+
+/load XIPivot
+/wait 4
+
+##########################################################################
+# Load Common Plugins
+##########################################################################
+
+/load Addons
+/load WindowerInput
+/load Ashitacast
+/load WatchEXP
+/load Duration
+/load Timestamp
+/load HardwareMouse
+/load Minimap
+
+
+##########################################################################
+# Load Common Addons
+##########################################################################
+
+/addon load ime
+/addon load Distance
+/addon load findall
+/addon load checker
+/addon load recast
+/addon load partybuffs
+/addon load allmaps
+/addon load instantah
+/addon load filters
+/addon load filterless
+/addon load findall
+/addon load zoom
+/addon load FPS
+/addon load TParty
+/addon load aspect
+/addon load drawdistance
+/addon load imguistyle
+/addon load chatmon
+/addon load mapdot
+/addon load checker
+/addon load itemwatch
+/addon load ibar
+/wait 1
+/drawdistance setworld 1
+/fps 1
+/gamepad allowbg
+/filters load filter
+
+##########################################################################
+# Set Common Settings
+##########################################################################
+
+/ambient 255 255 255 255 
+
+##########################################################################
+# Set Common Keybinds
+##########################################################################
+
+/bind SYSRQ /screenshot hide
+/bind ^v /paste
+/bind F11 /ambient
+/bind F12 /fps show
+/bind ^F1 /input /ta <a10>
+/bind ^F2 /input /ta <a11>
+/bind ^F3 /input /ta <a12>
+/bind ^F4 /input /ta <a13>
+/bind ^F5 /input /ta <a14>
+/bind ^F6 /input /ta <a15>
+/bind !F1 /input /ta <a20>
+/bind !F2 /input /ta <a21>
+/bind !F3 /input /ta <a22>
+/bind !F4 /input /ta <a23>
+/bind !F5 /input /ta <a24>
+/bind !F6 /input /ta <a25>
+
