@@ -1,0 +1,50 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>false</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statusupdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<sets>
+		<set name="idle10">
+			<main>Bee Spatha</main>
+			<sub>Shell Shield</sub>
+			<head>Faceguard</head>
+			<body>Scale Mail</body>
+			<hands>Ryl.Ftm. Gloves</hands>
+			<legs>Scale Cuisses</legs>
+			<feet>Scale Greaves</feet>
+			<ear1>Opal Earring</ear1>
+			<ring1>Brass Ring</ring1>
+			<ring2>Copper Ring</ring2>
+			<back>Rabbit Mantle</back>
+		</set>
+		<include>
+		</include>
+	</sets>
+	<variables>
+	</variables>
+	<inputcommands>
+	</inputcommands>
+
+	<idlegear>
+		<if p_status="idle">
+			<if p_joblevel=">=10"> <equip set="idle10" /> </if>
+			<elseif> </elseif>
+			<else></else>
+        </if>
+	</idlegear>
+
+	<preranged>
+	</preranged>
+	<midranged>
+	</midranged>
+	<premagic>
+	</premagic>
+	<midmagic>
+	</midmagic>
+	<jobability>
+	</jobability>
+	<weaponskill>
+	</weaponskill>
+</ashitacast>

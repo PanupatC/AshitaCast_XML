@@ -7,26 +7,20 @@
 	</settings>
 
     <sets>
-
-		<set name="idle1">
-			<main>Bronze Axe</main>
-			<body>Tarutaru Kaftan</body>
-			<hands>Tarutaru Mitts</hands>
-			<legs>Tarutaru Braccae</legs>
-			<feet>Tarutaru Clomps</feet>
-			<ring1>Windurstian Ring</ring1>
-			<ring2>Empress Band</ring2>
+		<set name="idle10">
+			<main>greataxe</main>
+			<head>Faceguard</head>
+			<body>Scale Mail</body>
+			<hands>Ryl.Ftm. Gloves</hands>
+			<legs>Scale Cuisses</legs>
+			<feet>Scale Greaves</feet>
+			<ear1>Opal Earring</ear1>
+			<ring1>Brass Ring</ring1>
+			<ring2>Copper Ring</ring2>
+			<back>Rabbit Mantle</back>
 		</set>
-		<set name="idle">
-			<main>Butterfly Axe</main>
-			<body>Tarutaru Kaftan</body>
-			<hands>Tarutaru Mitts</hands>
-			<legs>Tarutaru Braccae</legs>
-			<feet>Tarutaru Clomps</feet>
-			<neck>Justice Badge</neck>
-			<ring1>Windurstian Ring</ring1>
-			<ring2>Empress Band</ring2>
-		</set>
+		<include>
+		</include>
     </sets>
 
 	<!-- p_joblevel - Main Job's Level -->
@@ -37,11 +31,10 @@
 	<inputcommands></inputcommands>
 
 	<idlegear>
-		<if p_joblevel="<5"> <setvar name="lvl" value="1" /> </if>
-		<else>               <setvar name="lvl" value="" />  </else>
-
-        <if p_status="idle">
-            <equip set="idle$lvl" />
+		<if p_status="idle">
+			<if p_joblevel=">=10"> <equip set="idle10" /> </if>
+			<elseif> </elseif>
+			<else></else>
         </if>
     </idlegear>
 

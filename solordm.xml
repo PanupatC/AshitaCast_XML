@@ -6,10 +6,10 @@
 		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
 	</settings>
     <sets>
-		<set name="idle">
-			<main>Willow Wand</main>
+		<set name="solo">
+			<main>Spatha</main>
+			<sub>Shell Shield</sub>
 			<ammo>Little Worm</ammo>
-			<head>Poet's Circlet</head>
 			<body>Doublet</body>
 			<hands>Gloves</hands>
 			<legs>Slacks</legs>
@@ -20,44 +20,13 @@
 			<back>Cape</back>
 		</set>
     </sets>
-	
+
 	<variables>
-		<var name="lvl"></var>
 	</variables>
 
-	<inputcommands>
-	</inputcommands>
-
     <idlegear>
-		<!-- <if p_joblevel="<20"> <setvar name="lvl" value="10" /> </if>
-		<else> <setvar name="lvl" value="" /> </else> -->
-		
-		<if p_status="idle"> <equip set="idle$lvl" /> </if>
+        <equip set="solo" />
     </idlegear>
 
-	<preranged>
-	</preranged>
-		
-	<midranged>
-	</midranged>
-
-	<premagic>
-	</premagic>
-		
-	<midmagic>
-	</midmagic>
-
-	<jobability>
-	</jobability>
-
-	<weaponskill>
-	</weaponskill>
-	
-	<petskill>
-	</petskill>
-	
-	<petspell>
-	</petsspell>
-    
 
 </ashitacast>
