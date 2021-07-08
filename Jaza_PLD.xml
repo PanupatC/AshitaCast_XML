@@ -29,8 +29,9 @@
 
 	<idlegear>
 		<if p_status="idle">
-			<if p_joblevel=">=10"> <equip set="idle10" /> </if>
-			<elseif> </elseif>
+			<if p_joblevel=">=10">     <equip set="idle10" /> </if>
+			<elseif p_joblevel=">=17"> <equip set="idle17" /> </elseif>
+		        <elseif> </elseif>
 			<else></else>
         </if>
 	</idlegear>
