@@ -13,26 +13,41 @@
 			<hands>Ryl.Ftm. Gloves</hands>
 			<legs>Scale Cuisses</legs>
 			<feet>Scale Greaves</feet>
+			<neck>Justice Badge</neck>
+			<ear1>Opal Earring</ear1>
+			<ring1>Brass Ring</ring1>
+			<ring2>Windurstian Ring</ring2>
+			<back>Rabbit Mantle</back>
+		</set>
+		<set name="idle17">
+			<main>Pike</main>
+			<head>Lizard Helm</head>
+			<body>Lizard Jerkin</body>
+			<hands>Ryl.Ftm. Gloves</hands>
+			<legs>Scale Cuisses</legs>
+			<feet>Lizard Ledelsens</feet>
+			<neck>Justice Badge</neck>
 			<ear1>Opal Earring</ear1>
 			<ring1>Brass Ring</ring1>
 			<ring2>Copper Ring</ring2>
 			<back>Rabbit Mantle</back>
 		</set>
+
 	<include>
 	</include>
 	</sets>
 	<variables>
 	</variables>
 	<inputcommands>
+		<cmd input="/healbreath">/echo heal</cmd>
 	</inputcommands>
 
 	<idlegear>
 		<if p_status="idle">
-			<if p_joblevel=">=10"> <equip set="idle10" /> </if>
-			<elseif> </elseif>
-			<else></else>
+			<if p_joblevel=">16"> <equip set="idle17" /> </if>
+			<else>                <equip set="idle10" /> </else>
         </if>
-	</idlegear>
+    </idlegear>
 
 	<preranged>
 	</preranged>
