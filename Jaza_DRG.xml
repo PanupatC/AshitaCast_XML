@@ -39,7 +39,12 @@
 	<variables>
 	</variables>
 	<inputcommands>
-		<cmd input="/healbreath">/echo heal</cmd>
+		<cmd input="/healbreath">
+			<command>/echo &lt;hpp&gt;</command>
+			<if p_hpp="<34">
+				<command>/ma Dia &lt;t&gt;</command>
+			</if>
+		</cmd>
 	</inputcommands>
 
 	<idlegear>
