@@ -6,51 +6,194 @@
 		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
 	</settings>
 	<sets>
-		<set name="idle10">
-			<main>Pike</main>
-			<head>Faceguard</head>
-			<body>Scale Mail</body>
-			<hands>Ryl.Ftm. Gloves</hands>
-			<legs>Scale Cuisses</legs>
-			<feet>Scale Greaves</feet>
-			<neck>Justice Badge</neck>
-			<ear1>Opal Earring</ear1>
-			<ring1>Brass Ring</ring1>
-			<ring2>Windurstian Ring</ring2>
-			<back>Rabbit Mantle</back>
-		</set>
 		<set name="idle17">
 			<main>Pike</main>
-			<head>Lizard Helm</head>
+			<head>Bone Mask</head>
 			<body>Lizard Jerkin</body>
 			<hands>Ryl.Ftm. Gloves</hands>
 			<legs>Scale Cuisses</legs>
-			<feet>Lizard Ledelsens</feet>
+			<feet>Mtt. Leggings +1</feet>
 			<neck>Justice Badge</neck>
-			<ear1>Opal Earring</ear1>
-			<ring1>Brass Ring</ring1>
-			<ring2>Copper Ring</ring2>
+			<waist>Mrc.Cpt. Belt</waist>
+			<ring1>San d'Orian Ring</ring1>
+			<ring2>Bastokan Ring</ring2>
+		</set>
+		<set name="idle18" baseset="idle17">
+			<main>Ryl.Spr. Spear</main>
+		</set>
+		<set name="idle21">
+			<main>Ryl.Spr. Spear</main>
+			<head>Bone Mask</head>
+			<body>Lizard Jerkin</body>
+			<hands>Ryl.Ftm. Gloves</hands>
+			<legs>Scale Cuisses</legs>
+			<feet>Mtt. Leggings +1</feet>
+			<neck>Spike Necklace</neck>
+			<waist>Mrc.Cpt. Belt</waist>
 			<back>Rabbit Mantle</back>
+			<ring1>San d'Orian Ring</ring1>
+			<ring2>Bastokan Ring</ring2>
+			<ear1>Beetle Earring</ear1>
+			<ear2>Beetle Earring</ear2>
+		</set>
+		<set name="idle24" baseset="idle21">
+			<main>Spear</main>
+		</set>
+		<set name="idle26" baseset="idle21">
+			<main>Spear</main>
+			<back>Exactitude Mantle</back>
+		</set>
+		<set name="idle30">
+			<main>Ryl.Sqr. Halberd</main>
+			<head>Mrc.Cpt. Headgear</head>
+			<body>Ctr. Scale Mail</body>
+			<hands>Combat Mittens +1</hands>
+			<legs>Studded Trousers</legs>
+			<feet>Mtt. Leggings +1</feet>
+			<neck>Spike Necklace</neck>
+			<ear1>Beetle Earring</ear1>
+			<ear2>Beetle Earring</ear2>
+			<ring1>San d'Orian Ring</ring1>
+			<ring2>Bastokan Ring</ring2>
+			<back>Exactitude Mantle</back>
+		</set>
+		<set name="idle36" baseset="idle30">
+			<main>Halberd</main>
+		</set>
+		<set name="idle42" baseset="idle30">
+			<main>Peregrine</main>	
+			<waist>Headlong Belt</waist>
+		</set>
+		<set name="idle45" baseset="idle30">
+			<main>Peregrine</main>
+			<body>Brigandine</body>
+			<waist>Headlong Belt</waist>
+		</set>
+		<set name="idle50" baseset="idle30">
+			<legs>Crow Hose</legs>
+		</set>
+		<set name="idle55">
+			<main>Holy Lance</main>
+			<head>Mrc.Cpt. Headgear</head>
+			<body>Jaridah Peti</body>
+			<hands>Combat Mittens +1</hands>
+			<legs>Crow Hose</legs>
+			<feet>Mtt. Leggings +1</feet>
+			<neck>Spike Necklace</neck>
+			<waist>Headlong Belt</waist>
+			<ear1>Fang Earring</ear1>
+			<ear2>Fang Earring</ear2>
+			<ring1>Sun Ring</ring1>
+			<ring2>Sniper's Ring</ring2>
+			<back>Exactitude Mantle</back>
 		</set>
 
-	<include>
-	</include>
+		<set name="idle59" baseset="idle55">
+			<head>Zeal Cap</head>
+		</set>
+		<set name="idle60" baseset="idle59">
+			<main>Dark Mezraq</main>
+		</set>
+		<set name="idle61">
+			<main>Dark Mezraq</main>
+			<head>Zeal Cap</head>
+			<body>Jaridah Peti</body>
+			<hands>Combat Mittens +1</hands>
+			<legs>Crow Hose</legs>
+			<feet>Mtt. Leggings +1</feet>
+			<neck>Spike Necklace</neck>
+			<waist>Headlong Belt</waist>
+			<ear1>Fang Earring</ear1>
+			<ear2>Fang Earring</ear2>
+			<ring1>Sun Ring</ring1>
+			<ring2>Sniper's Ring</ring2>
+			<back>Amemet Mantle</back>	
+		</set>
+		<set name="idle63" baseset="idle61">
+			<legs>Feral Trousers</legs>
+		</set>
+
+
+
+		<set name="solo" baseset="idle63">
+			<hands>Drachen Fng. Gnt.</hands>
+			<legs>Drachen Brais</legs>
+			<feet>Drachen Greaves</feet>
+			<ring2>San d'Orian Ring</ring2>
+		</set>
+
+		<set name="TriggerBreath">
+			<head>Drachen Armet</head>
+		</set>
+
+
+		<set name="jump">
+			<feet>Drachen Greaves</feet>
+		</set>
+
+
+		<include>
+		</include>
 	</sets>
+
 	<variables>
+		<var name="solo">no</var>
 	</variables>
+
 	<inputcommands>
 		<cmd input="/healbreath">
 			<command>/echo &lt;hpp&gt;</command>
-			<if p_hpp="<34">
-				<command>/ma Dia &lt;t&gt;</command>
+			<if p_joblevel=">59">
+				<if p_hpp="<50"> <command delay="100">/ma "Dia" &lt;t&gt;</command> </if>
 			</if>
+			<else>
+				<if p_hpp="<33"> <command delay="100">/ma "Dia" &lt;t&gt;</command> </if>
+			</else>
 		</cmd>
+
+		<cmd input="/penta">
+			<if p_joblevel="<49"> <command>/ws "Double Thrust" &lt;t&gt;</command></if>
+			<else>                <command>/ws "Penta Thrust" &lt;t&gt;</command> </else>
+		</cmd>
+
+		<cmd input="/invis">
+			<if p_subjob="nin"> <command>/ma "Tonko: Ichi" &lt;me&gt;</command> </if>
+			<else>              <command>/ma "Invisible" &lt;stpc&gt;</command> </else>
+		</cmd>
+		<cmd input="/sneak">
+			<if p_subjob="nin"> <command>/ma "Monomi: Ichi" &lt;me&gt;</command> </elseif>
+			<else>              <command>/ma "Sneak" &lt;stpc&gt;</command> </else>
+		</cmd>
+		
+		<cmd input="/solo">
+			<if advanced="$solo=true"> <setvar name="solo" value="false" /> </if>
+			<else>                     <setvar name="solo" value="true" /> </else>
+		</cmd>
+
 	</inputcommands>
 
 	<idlegear>
-		<if p_status="idle">
-			<if p_joblevel=">16"> <equip set="idle17" /> </if>
-			<else>                <equip set="idle10" /> </else>
+		<if advanced="(%p_status=idle)|(%p_status=engaged)">
+			<if advanced="$solo=true">
+				<equip set="solo" />
+			</if>
+			<else>
+				<if p_joblevel="<18">     <equip set="idle17" /> </if>
+				<elseif p_joblevel="<21"> <equip set="idle18" /> </elseif>
+				<elseif p_joblevel="<24"> <equip set="idle21" /> </elseif>
+				<elseif p_joblevel="<26"> <equip set="idle24" /> </elseif>
+				<elseif p_joblevel="<30"> <equip set="idle26" /> </elseif>
+				<elseif p_joblevel="<36"> <equip set="idle30" /> </elseif>
+				<elseif p_joblevel="<42"> <equip set="idle36" /> </elseif>
+				<elseif p_joblevel="<45"> <equip set="idle42" /> </elseif>
+				<elseif p_joblevel="<50"> <equip set="idle45" /> </elseif>
+				<elseif p_joblevel="<55"> <equip set="idle50" /> </elseif>
+				<elseif p_joblevel="<59"> <equip set="idle55" /> </elseif>
+				<elseif p_joblevel="<60"> <equip set="idle59" /> </elseif>
+				<elseif p_joblevel="<61"> <equip set="idle60" /> </elseif>
+				<elseif p_joblevel="<63"> <equip set="idle61" /> </elseif>
+				<else>                    <equip set="idle63" /> </else>
+			</else>
         </if>
     </idlegear>
 
@@ -60,10 +203,21 @@
 	</midranged>
 	<premagic>
 	</premagic>
+	
 	<midmagic>
+		<if p_joblevel=">59">
+			<equip set="TriggerBreath" />
+		</if>
 	</midmagic>
+	
 	<jobability>
+		<if ad_name="*Jump">
+			<equip set="jump/" />
+		</if>
 	</jobability>
 	<weaponskill>
+		<if advanced="(%p_joblevel>59)&($solo=true)">
+			<equip set="TriggerBreath" />
+		</if>
 	</weaponskill>
 </ashitacast>
