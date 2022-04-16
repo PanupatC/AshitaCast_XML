@@ -5,75 +5,30 @@
 		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
 		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
 	</settings>
+
 	<sets>
-		<set name="idle17">
-			<main>Pike</main>
-			<head>Bone Mask</head>
-			<body>Lizard Jerkin</body>
-			<hands>Ryl.Ftm. Gloves</hands>
-			<legs>Scale Cuisses</legs>
-			<feet>Mtt. Leggings +1</feet>
-			<neck>Justice Badge</neck>
-			<waist>Mrc.Cpt. Belt</waist>
-			<ring1>San d'Orian Ring</ring1>
-			<ring2>Bastokan Ring</ring2>
-		</set>
-		<set name="idle18" baseset="idle17">
-			<main>Ryl.Spr. Spear</main>
-		</set>
-		<set name="idle21">
-			<main>Ryl.Spr. Spear</main>
-			<head>Bone Mask</head>
-			<body>Lizard Jerkin</body>
-			<hands>Ryl.Ftm. Gloves</hands>
-			<legs>Scale Cuisses</legs>
-			<feet>Mtt. Leggings +1</feet>
-			<neck>Spike Necklace</neck>
-			<waist>Mrc.Cpt. Belt</waist>
-			<back>Rabbit Mantle</back>
-			<ring1>San d'Orian Ring</ring1>
-			<ring2>Bastokan Ring</ring2>
-			<ear1>Beetle Earring</ear1>
-			<ear2>Beetle Earring</ear2>
-		</set>
-		<set name="idle24" baseset="idle21">
-			<main>Spear</main>
-		</set>
-		<set name="idle26" baseset="idle21">
-			<main>Spear</main>
-			<back>Exactitude Mantle</back>
-		</set>
-		<set name="idle30">
-			<main>Ryl.Sqr. Halberd</main>
+		<!-- === Level sync set === -->
+		<set name="36">
+			<main>Halberd +1</main>
 			<head>Mrc.Cpt. Headgear</head>
 			<body>Ctr. Scale Mail</body>
 			<hands>Combat Mittens +1</hands>
-			<legs>Studded Trousers</legs>
+			<legs>Ctr. Cuisses</legs>
 			<feet>Mtt. Leggings +1</feet>
 			<neck>Spike Necklace</neck>
-			<ear1>Beetle Earring</ear1>
-			<ear2>Beetle Earring</ear2>
+			<waist>Brave Belt</waist>
+			<ear1>Beetle Earring +1</ear1>
+			<ear2>Beetle Earring +1</ear2>
 			<ring1>San d'Orian Ring</ring1>
 			<ring2>Bastokan Ring</ring2>
 			<back>Exactitude Mantle</back>
 		</set>
-		<set name="idle36" baseset="idle30">
-			<main>Halberd</main>
-		</set>
-		<set name="idle42" baseset="idle30">
-			<main>Peregrine</main>	
-			<waist>Headlong Belt</waist>
-		</set>
-		<set name="idle45" baseset="idle30">
-			<main>Peregrine</main>
-			<body>Brigandine</body>
-			<waist>Headlong Belt</waist>
-		</set>
-		<set name="idle50" baseset="idle30">
-			<legs>Crow Hose</legs>
+		<set name="38" baseset="36">
+			<main>Obelisk Lance</main>
 		</set>
 		<set name="idle55">
 			<main>Holy Lance</main>
+			<sub>Mythril Grip +1</sub>
 			<head>Mrc.Cpt. Headgear</head>
 			<body>Jaridah Peti</body>
 			<hands>Combat Mittens +1</hands>
@@ -81,74 +36,134 @@
 			<feet>Mtt. Leggings +1</feet>
 			<neck>Spike Necklace</neck>
 			<waist>Headlong Belt</waist>
-			<ear1>Fang Earring</ear1>
-			<ear2>Fang Earring</ear2>
-			<ring1>Sun Ring</ring1>
-			<ring2>Sniper's Ring</ring2>
+			<ear1>Spike Earring</ear1>
+			<ear2>Spike Earring</ear2>
+			<ring1>Kusha's Ring</ring1>
+			<ring2>Lava's Ring</ring2>
 			<back>Exactitude Mantle</back>
 		</set>
-
-		<set name="idle59" baseset="idle55">
+		<set name="idle56" baseset="idle55">
+			<neck>Coral Gorget</neck>
+		</set>
+		<set name="idle59" baseset="idle56">
 			<head>Zeal Cap</head>
+			<ammo>Tiphia Sting</ammo>
 		</set>
 		<set name="idle60" baseset="idle59">
 			<main>Dark Mezraq</main>
 		</set>
 		<set name="idle61">
 			<main>Dark Mezraq</main>
+			<sub>Mythril Grip +1</sub>
 			<head>Zeal Cap</head>
 			<body>Jaridah Peti</body>
 			<hands>Combat Mittens +1</hands>
 			<legs>Crow Hose</legs>
 			<feet>Mtt. Leggings +1</feet>
-			<neck>Spike Necklace</neck>
+			<neck>Merman's Gorget</neck>
 			<waist>Headlong Belt</waist>
-			<ear1>Fang Earring</ear1>
-			<ear2>Fang Earring</ear2>
-			<ring1>Sun Ring</ring1>
-			<ring2>Sniper's Ring</ring2>
+			<ear1>Spike Earring</ear1>
+			<ear2>Spike Earring</ear2>
+			<ring1>Kusha's Ring</ring1>
+			<ring2>Lava's Ring</ring2>
 			<back>Amemet Mantle</back>	
+			<ammo>Tiphia Sting</ammo>
 		</set>
 		<set name="idle63" baseset="idle61">
 			<legs>Feral Trousers</legs>
+			<ear2>Merman's Earring</ear2>
+		</set>
+		<set name="idle65" baseset="idle63">
+			<body>Thrk. Breastplate</body>
+		</set>
+		<set name="idle69" baseset="idle65">
+			<main>Skystrider</main>
+			<back>Psilos Mantle</back>
+		</set>
+		<set name="idle70" baseset="idle69">
+			<legs>Barone Cosciales</legs>
+		</set>
+		<set name="idle72" baseset="idle70">
+			<hands>Wyrm Fng.Gnt.</hands>
 		</set>
 
-
-
-		<set name="solo" baseset="idle63">
+		<!-- === Above 72 set === -->
+		<set name="idle">
+			<main>Lyft Lance</main>
+			<sub>Mythril Grip +1</sub>
+			<head>Crimson Mask</head>
+			<neck>Chivalrous Chain</neck>
+			<body>Askar Korazin</body>
+			<hands>Wyrm Fng.Gnt.</hands>
+			<back>Amemet Mantle +1</back>
+			<waist>Headlong Belt</waist>
+			<legs>Barone Cosciales</legs>
+			<feet>Drachen Greaves</feet>
+			<ear1>Spike Earring</ear1>
+			<ear2>Merman's Earring</ear2>
+			<ring1>Kusha's Ring</ring1>
+			<ring2>Lava's Ring</ring2>
+			<ammo>Tiphia Sting</ammo>
+		</set>
+		<set name="haste" baseset="idle">
+			<head>Walahra Turban</head>
+			<hands>Dusk Gloves</hands>
+			<waist>Headlong Belt</waist>
+			<feet>Dusk Ledelsens</feet>
+		</set>
+		<set name="survive">
+			<head>Crimson Mask</head>
+			<body>Wyrm Mail</body>
 			<hands>Drachen Fng. Gnt.</hands>
-			<legs>Drachen Brais</legs>
-			<feet>Drachen Greaves</feet>
-			<ring2>San d'Orian Ring</ring2>
-		</set>
-
-		<set name="TriggerBreath">
-			<head>Drachen Armet</head>
-		</set>
-
-
-		<set name="jump">
 			<feet>Drachen Greaves</feet>
 		</set>
-
-
-		<include>
-		</include>
+		<set name="penta" baseset="idle">
+			<head>Hecatomb Cap</head>
+			<neck>Spike Necklace</neck>
+			<body>Thrk. Breastplate</body>
+			<hands>Hecatomb Mittens</hands>
+			<waist>Virtuoso Belt</waist>
+			<legs>Barone Cosciales</legs>
+			<feet>Mtt. Leggings +1</feet>
+			<ring1>Kusha's Ring</ring1>
+			<ring2>Lava's Ring</ring2>
+		</set>
+		<set name="str" baseset="idle">
+			<head>Hecatomb Cap</head>
+			<neck>Chivalrous Chain</neck>
+			<!-- <body>Hecatomb Harness</body> -->
+			<hands>Hecatomb Mittens</hands>
+			<waist>Virtuoso Belt</waist>
+			<back>Amemet Mantle +1</back>
+			<legs>Barone Cosciales</legs>
+			<feet>Dusk Ledelsens</feet>
+			<ear1>Fowling Earring</ear1>
+			<ring1>Flame Ring</ring1>
+			<ring2>Ruby Ring</ring2>
+			<!-- <ring2>Sniper's Ring</ring2> -->
+		</set>
+		<set name="hp">
+			<!-- <head>Wyvern Helm</head> -->
+			<body>Wyrm Mail</body>
+			<hands>Dusk Gloves</hands>
+			<legs>Wyrm Brais</legs>
+			<feet>Dusk Ledelsens</feet>
+		</set>
 	</sets>
 
 	<variables>
-		<var name="solo">no</var>
+		<var name="mode">haste</var>
+		<var name="modews">askar</var>
 	</variables>
 
 	<inputcommands>
 		<cmd input="/healbreath">
-			<command>/echo &lt;hpp&gt;</command>
-			<if p_joblevel=">59">
+			<!-- <if p_joblevel=">59">
 				<if p_hpp="<50"> <command delay="100">/ma "Dia" &lt;t&gt;</command> </if>
 			</if>
 			<else>
 				<if p_hpp="<33"> <command delay="100">/ma "Dia" &lt;t&gt;</command> </if>
-			</else>
+			</else> -->
 		</cmd>
 
 		<cmd input="/penta">
@@ -165,59 +180,96 @@
 			<else>              <command>/ma "Sneak" &lt;stpc&gt;</command> </else>
 		</cmd>
 		
-		<cmd input="/solo">
-			<if advanced="$solo=true"> <setvar name="solo" value="false" /> </if>
-			<else>                     <setvar name="solo" value="true" /> </else>
+		<cmd input="/mode">
+			<if advanced="$mode=haste"><setvar name="mode" value="survive" /></if>
+			<else>                     <setvar name="mode" value="haste" /></else>
+			<command>/echo Set mode => $mode</command>
+		</cmd>
+		<cmd input="/modews">
+			<if advanced="$modews=heca"><setvar name="modews" value="askar" /></if>
+			<else>                     <setvar name="modews" value="heca" /></else>
+			<command>/echo Set modeWS => $modews</command>
 		</cmd>
 
 	</inputcommands>
 
 	<idlegear>
-		<if advanced="(%p_status=idle)|(%p_status=engaged)">
-			<if advanced="$solo=true">
-				<equip set="solo" />
+		<if p_joblevel=">72">
+			<equip set="idle" />
+			<if p_status="engaged">
+				<if p_ismoving="true"></if>
+				<else>
+					<equip set="haste" />
+				</else>
+				<if advanced="$mode=survive">
+					<equip set="survive" />
+				</if>
 			</if>
-			<else>
-				<if p_joblevel="<18">     <equip set="idle17" /> </if>
-				<elseif p_joblevel="<21"> <equip set="idle18" /> </elseif>
-				<elseif p_joblevel="<24"> <equip set="idle21" /> </elseif>
-				<elseif p_joblevel="<26"> <equip set="idle24" /> </elseif>
-				<elseif p_joblevel="<30"> <equip set="idle26" /> </elseif>
-				<elseif p_joblevel="<36"> <equip set="idle30" /> </elseif>
-				<elseif p_joblevel="<42"> <equip set="idle36" /> </elseif>
-				<elseif p_joblevel="<45"> <equip set="idle42" /> </elseif>
-				<elseif p_joblevel="<50"> <equip set="idle45" /> </elseif>
-				<elseif p_joblevel="<55"> <equip set="idle50" /> </elseif>
-				<elseif p_joblevel="<59"> <equip set="idle55" /> </elseif>
-				<elseif p_joblevel="<60"> <equip set="idle59" /> </elseif>
-				<elseif p_joblevel="<61"> <equip set="idle60" /> </elseif>
-				<elseif p_joblevel="<63"> <equip set="idle61" /> </elseif>
-				<else>                    <equip set="idle63" /> </else>
-			</else>
-        </if>
+		</if>
+		<else>
+			<if p_joblevel=">71">     <equip set="idle72" /> </if>
+			<elseif p_joblevel=">68"> <equip set="idle69" /> </elseif>
+			<elseif p_joblevel=">64"> <equip set="idle65" /> </elseif>
+			<elseif p_joblevel=">62"> <equip set="idle63" /> </elseif>
+			<elseif p_joblevel=">60"> <equip set="idle61" /> </elseif>
+			<elseif p_joblevel=">59"> <equip set="idle60" /> </elseif>
+			<elseif p_joblevel=">58"> <equip set="idle59" /> </elseif>
+			<elseif p_joblevel=">55"> <equip set="idle56" /> </elseif>
+			<elseif p_joblevel=">54"> <equip set="idle55" /> </elseif>
+			<elseif p_joblevel=">37"> <equip set="idle38" /> </elseif>
+			<elseif p_joblevel=">35"> <equip set="idle36" /> </elseif>
+		</else>
     </idlegear>
 
 	<preranged>
 	</preranged>
 	<midranged>
 	</midranged>
+
 	<premagic>
+		<equip set="haste" />
 	</premagic>
 	
 	<midmagic>
-		<if p_joblevel=">59">
-			<equip set="TriggerBreath" />
-		</if>
+		<equip><head>Drachen Armet</head></equip>
 	</midmagic>
-	
+
 	<jobability>
-		<if ad_name="*Jump">
-			<equip set="jump/" />
+		<if ad_name="Jump">
+			<equip>
+				<legs>Barone Cosciales</legs>
+				<feet>Drachen Greaves</feet>
+			</equip>
+		</if>
+		<if ad_name="High Jump">
+			<equip><legs>Wyrm Brais</legs></equip>
+		</if>
+		<if ad_name="Call Wyvern">
+			<equip><body>Wyrm Mail</body></equip>
+		</if>
+		<if ad_name="Angon">
+			<equip><ammo>Angon</ammo></equip>
 		</if>
 	</jobability>
+
 	<weaponskill>
-		<if advanced="(%p_joblevel>59)&($solo=true)">
-			<equip set="TriggerBreath" />
+		<if ad_name="Penta Thrust">
+			<equip set="penta" />
 		</if>
+		<else>
+			<equip set="str" />
+			<if advanced="$modews=askar">
+				<equip><body>Askar Korazin</body></equip>
+			</if>
+			<else>
+				<equip><body>Hecatomb Harness</body></equip>
+			</else>
+		</else>
 	</weaponskill>
+
+	<petskill>
+		<if p_joblevel="75">
+			<equip><head>Wyrm Armet</head></equip>
+		</if>
+	</petskill>
 </ashitacast>
