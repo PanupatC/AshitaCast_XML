@@ -5,30 +5,206 @@
 		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
 		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
 	</settings>
+
+	<inputcommands>
+		<cmd input="/invis">
+			<if p_subjob="nin"> <command>/ma "Tonko: Ichi" &lt;me&gt;</command> </if>
+			<else>              <command>/ma "Invisible" &lt;stpc&gt;</command> </else>
+		</cmd>
+		<cmd input="/sneak">
+			<if p_subjob="nin"> <command>/ma "Monomi: Ichi" &lt;me&gt;</command> </if>
+			<else>              <command>/ma "Sneak" &lt;stpc&gt;</command> </else>
+		</cmd>
+		<cmd input="/regen">
+			<command>/ma "Regen" &lt;stpc&gt;</command>
+		</cmd>
+		<cmd input="/mode">
+			<if advanced="$mode=damage"><setvar name="mode" value="skill" /></if>
+			<else>                      <setvar name="mode" value="damage" /></else>
+			<command>/echo == Set Mode --> $mode ==</command>
+		</cmd>
+    </inputcommands>
+
     <sets>
-		<set name="default">
-			<main>Willow Wand</main>
-			<sub>Lauan Shield</sub>
-			<body>Tunic</body>
-			<hands>Gloves</hands>
-			<legs>Slacks</legs>
-			<feet>Tarutaru Clomps</feet>
-			<neck>Justice Badge</neck>
-			<ring1>Windurstian Ring</ring1>
-			<back>Cape</back>
+		<!-- BASE SETS -->
+		<set name="interupt">
+			<head>Igqira Tiara</head>
+			<body>Igqira Weskit</body>
+			<legs>Igqira Lappas</legs>
+			<feet>Wizard's Sabots</feet>
+		</set>
+		<set name="haste" baseset="interupt">
+			<head>Walahra Turban</head>
+			<body>Goliard Saio</body>
+			<waist>Headlong Belt</waist>
+			<feet>Rostrum Pumps</feet>
+		</set>
+		
+		<set name="int">
+			<sub>Bugard Strap +1</sub>
+			<ammo>Phtm. Tathlum</ammo>
+			<head>Demon Helm</head>
+			<neck>Mohbwa Scarf +1</neck>
+			<body>Errant Hpl.</body>
+			<back>Prism Cape</back>
+			<hand>Seer's Mitts +1</hand>
+			<waist>Penitent's Rope</waist>
+			<legs>Mahatma Slops</legs>
+			<feet>Rostrum Pumps</feet>
+			<ear1>Morion Earring</ear1>
+			<ear2>Morion Earring</ear2>
+			<ring1>Diamond Ring</ring1>
+			<ring2>Diamond Ring</ring2>
+		</set>
+		<set name="mnd" baseset="int">
+			<head>Errant Hat</head>
+			<body>Errant Hpl.</body>
+			<hand>Seer's Mitts +1</hand>
+			<neck>Mohbwa Scarf</neck>
+			<back>Prism Cape</back>
+			<waist>Penitent's Rope</waist>
+			<legs>Mahatma Slops</legs>
+			<feet>Rostrum Pumps</feet>
+			<ring2>San d'Orian Ring</ring2>
+		</set>
+		
+		<!-- SPECIFIC SETS -->
+		<set name="enhance" baseset="mnd">
+	
+		</set>
+		<set name="enfeeb-int" baseset="int">
+			<head>Igqira Tiara</head>
+			<neck>Spider Torque</neck>
+			<body>Wizard's Coat</body>
+			<legs>Igqira Lappas</legs>
+			<feet>Wizard's Sabots</feet>
+		</set>
+		<set name="enfeeb-mnd" baseset="mnd">
+			<head>Igqira Tiara</head>
+			<neck>Spider Torque</neck>
+			<body>Wizard's Coat</body>
+			<legs>Igqira Lappas</legs>
+			<feet>Wizard's Sabots</feet>
+		</set>
+		<set name="enfeeb-drk" baseset="int">
+			<legs>Wizard's Tonban</legs>
+		</set>
+		<set name="damage-nuke" baseset="int">
+			<ear1>Moldavite Earring</ear1>
+			<body>Igqira Weskit</body>
+			<neck>Elemental Torque</neck>
+			<hands>Zenith Mitts</hands>
+			<feet>Rostrum Pumps</feet>
+		</set>
+		<set name="skill-nuke" baseset="int">
+			<ear1>Moldavite Earring</ear1>
+			<body>Igqira Weskit</body>
+			<neck>Elemental Torque</neck>
+			<hands>Wizard's Gloves</hands>
+			<feet>Wizard's Sabots</feet>
+		</set>
+		<!-- 49+ pretty much 75 set -->
+		<set name="idle">
+			<main>Earth Staff</main>
+			<sub>Bugard Strap +1</sub>
+			<ammo>Phtm. Tathlum</ammo>
+			<head>displaced</head>
+			<body>Black Cloak</body>
+			<hands>Wizard's Gloves</hands>
+			<legs>Mahatma Slops</legs>
+			<feet>Wizard's Sabots</feet>
+			<neck>Mohbwa Scarf +1</neck>
+			<waist>Penitent's Rope</waist>
+			<ear1>Moldavite Earring</ear1>
+			<ear2>Morion Earring</ear2>
+			<ring1>Diamond Ring</ring1>
+			<ring2>Diamond Ring</ring2>
+			<back>Prism Cape</back>
+		</set>
+		<set name="32">
+			<main>Solid Wand</main>
+			<ammo>Morion Tathlum</ammo>
+			<head>Seer's Crown</head>
+			<body>Seer's Tunic</body>
+			<hands>Seer's Mitts +1</hands>
+			<legs>Seer's Slacks</legs>
+			<feet>Mage's Sandals</feet>
+			<neck>Mohbwa Scarf +1</neck>
+			<waist>Qiqirn Sash</waist>
+			<ear1>Morion Earring</ear1>
+			<ear2>Morion Earring</ear2>
+			<ring1>Eremite's Ring</ring1>
+			<ring2>Eremite's Ring</ring2>
+			<back>Black Cape</back>
 		</set>
     </sets>
 
-    <!--equip set="Idle" /-->
-    <!--idlegear>
-        <if p_status="idle">
-            <equip set="Idle" />
-        </if>
-    </idlegear-->
-	<inputcommands>
-        <cmd input="/acdefault">
-            <equip set="default" />
-        </cmd>
-    </inputcommands>
+
+	<!-- check multiple spell example -->
+	<!-- <var name="IntNukes">10|12|13|14|15|16</var>
+	<if ad_id="$IntNukes"> -->
+	
+	<init>
+		<command>/echo == Set Mode --> $mode ==</command>
+		<!-- <command delay="5000">/lockstyle on</command> -->
+	</init>
+	
+	<variables>
+		<var name="fire-staff">Fire Staff</var>
+		<var name="ice-staff">Aquilo's Staff</var>
+		<var name="wind-staff">Auster's Staff</var>
+		<var name="earth-staff">Earth Staff</var>
+		<var name="thunder-staff">Jupiter's Staff</var>
+		<var name="water-staff">Water Staff</var>
+		<var name="dark-staff">Pluto's Staff</var>
+		<var name="light-staff">Light Staff</var>
+		<var name="nonelemental-staff">Earth Staff</var>
+		<var name="mode">damage</var>
+	</variables>
+
+    <idlegear>
+		<if eq_head="Reraise Hairpin">
+			<equip><body>Errant Hpl.</body></equip>
+		</if>
+		<elseif p_status="idle|engaged">
+			<if     p_joblevel=">50"><equip set="idle" /></if>
+			<elseif p_joblevel=">31"><equip set="32" /></elseif>
+		</elseif>
+        <elseif p_status="resting">
+			<if p_joblevel=">71"><equip><body>Errant Hpl.</body></equip></if>
+			<if p_joblevel=">50"><equip><main>Pluto's Staff</main></equip></if>
+			<elseif p_joblevel=">28">
+				<equip>
+					<main>Spiro Staff</main>
+					<body>Seer's Tunic</body>
+				</equip>
+			</elseif>
+			<equip><waist>Qiqirn Sash</waist></equip>
+		</elseif>
+		
+    </idlegear>
+
+	<premagic>
+		<equip set="haste" />
+	</premagic>
+	
+	<midmagic>
+		<if p_joblevel=">49">
+			<equip><main>$%ad_element-staff</main></equip>
+			
+			<if ad_skill="elementalmagic"><equip set="$mode-nuke" /></if>
+			<elseif ad_name="Gravity|Sleep*|Bind"><equip set="enfeeb-int" /></elseif>
+			<elseif ad_name="Slow|Paralyze|Silence"><equip set="enfeeb-mnd" /></elseif>
+			<elseif ad_name="Drain|Aspir|Absorb*"><equip set="enfeeb-drk" /></elseif>
+			<elseif ad_name="Stoneskin"><equip set="enhance" /></elseif>
+			<elseif ad_name="Sneak|Invisible|Tonko*|Monomi*">
+				<equip><back>Skulker's Cape</back></equip>
+			</elseif>
+			<else><equip set="interupt" /></else>
+			
+		</if>
+		
+	</midmagic>
+
 
 </ashitacast>
